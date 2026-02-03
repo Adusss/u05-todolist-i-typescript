@@ -1,0 +1,149 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(151deg, rgba(255, 0, 0, 1) 0%, rgba(4, 0, 255, 1) 100%);
+  min-height: 100%;
+}
+
+/* APP CONTAINER */
+#app {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+/* INPUT / BUTTONS */
+.todo-main {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+}
+
+.todo-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: #a3218e;
+  box-shadow: 0 0 5px rgba(190, 22, 168, 0.5);
+}
+
+.button-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.todo-button {
+  padding: 5px;
+  font-size: 14px;
+  width: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin: 5px 0;
+}
+
+.todo-button:hover {
+  background-color: rgba(128, 128, 128, 0.384);
+  transition: 0.3s;
+}
+
+.clear-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.clear-button:hover {
+  border-radius: 50px;
+  background-color: rgba(128, 128, 128, 0.384);
+  transition: 0.3s;
+}
+
+.todo-filter {
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  text-align: center;
+}
+
+.todo-filter:focus {
+  border-color: #a3218e;
+  box-shadow: 0 0 5px rgba(190, 22, 168, 0.5);
+}
+
+/*  FILTER*/
+.filter-holder {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.control-holder {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+/*  TODOLIST */
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.todo-left {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+}
+
+.todo-left span {
+  margin: 0 10px;
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.todo-list button {
+  border: none;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
