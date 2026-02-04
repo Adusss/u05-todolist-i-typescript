@@ -10,21 +10,4 @@ En svaghet är att all renderingslogik finns samlad i en enda fil, vilket kan g�
 
 Trots detta uppfyller projektet sina mål och visar en god förståelse för grunderna i TypeScript och webbprogrammering.
 
-# Teoretiska frågor
 
-**Vad är TypeScript och varför använder man det istället för vanlig JavaScript?**
-
-TypeScript är en utökning av JavaScript som lägger till statisk typning. Dess huvudsakliga syfte är att upptäcka fel redan när koden skrivs, istället för först när programmet körs.
-TypeScript används ofta eftersom det gör koden mer strukturerad och lättare att läsa, särskilt i större projekt.
-
-**Förklara skillnaden mellan `unknown`, `any` och en specifik typ som `string`. När bör man använda de olika typerna?**
-
-Typen `any` innebär att en variabel kan innehålla vilket värde som helst. TypeScript utför då ingen typkontroll, vilket gör att risken för fel ökar. `any` kan vara användbart i vissa situationer, men bör generellt undvikas.
-Typen `unknown` är ett säkrare alternativ till `any`. Den tillåter lagring av vilket värde som helst, men kräver att typen kontrolleras innan värdet används.
-En specifik typ, till exempel `string`, innebär att en variabel endast kan innehålla data av den typen. Detta är den säkraste lösningen när datatypen är känd.
-
-**Vad är syftet med att använda types/interfaces i TypeScript? Varför är de viktiga när man bygger större projekt?**
-
-Typer och gränssnitt används för att definiera hur data ska se ut i applikationen. I detta projekt anger Todo-gränssnittet att varje uppgift måste innehålla id, text och completed, vilket säkerställer datakonsistens.
-
-I större projekt är typer och gränssnitt viktiga eftersom de förbättrar kodens läsbarhet, minskar antalet fel och underlättar vidareutveckling och underhåll. De fungerar även som dokumentation och är viktiga vid samarbete i team.
